@@ -1,3 +1,3 @@
-interface ChildProps {
+interface TChildProps {
   children: TChildren
 }

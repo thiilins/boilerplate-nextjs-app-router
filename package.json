@@ -1,23 +1,33 @@
 {
   "name": "portfolio_new",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "scripts": {
-    "dev": "next dev",
+    "dev": "rm -rf .next && next dev",
+    "develop": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint  --no-cache",
+    "lint": "next lint  --no-cache --max-warnings=0 --fix",
     "storybook": "storybook dev -p 6006",
+    "postinstall": "husky install",
     "build-storybook": "storybook build",
+    "generate": "yarn plop --plopfile generators/plopfile.cjs",
     "push:patch": "npm version patch && git push",
     "push:minor": "npm version minor && git push",
     "push:major": "npm version major && git push"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
+    ]
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.4.0",
     "@types/node": "20.5.7",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "cookie": "^0.5.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "negotiator": "^0.6.3",
@@ -40,6 +50,7 @@
     "@swc/plugin-styled-components": "^1.5.74",
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
+    "@types/cookie": "^0.5.1",
     "@types/negotiator": "^0.6.1",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^6.5.0",

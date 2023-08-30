@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import * as S from './styles'
+import ChangeThemeButton from '../ChangeThemeButton'
 const Main = ({
   title = 'Boilerplate Next + Typescript',
   description = 'TypeScript, ReactJS, NextJS e Styled Components'
@@ -23,6 +24,7 @@ const Main = ({
       width={300}
       height={300}
     />
+    <ChangeThemeButton />
   </S.Wrapper>
 )
 

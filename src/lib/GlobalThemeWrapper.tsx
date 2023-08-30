@@ -1,13 +1,26 @@
 'use client'
 import { ThemeProvider } from 'styled-components'
 import { useLocalStorage } from 'usehooks-ts'
-import { dark, light } from '@styles/themes'
+import themes from '@styles/themes'
 import GlobalStyle from '@styles/global'
-export default function GlobalThemeWrapper({ children }: ChildProps) {
-  const [theme] = useLocalStorage('theme', dark)
+import cookie from 'cookie'
+import useThemeCookie from '@/shared/hooks/useThemeCookie'
+import { GetServerSideProps } from 'next'
+interface IProps extends TChildProps {
+  ssrCookieTheme: unknown
+}
+export default function GlobalThemeWrapper({
+  children,
+  ssrCookieTheme
+}: IProps) {
+  const [cookieTheme] = useThemeCookie()
+  const [theme] = useLocalStorage<ThemeTypes>(
+    'theme',
+    ssrCookieTheme as ThemeTypes
+  )
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={themes[theme]}>
       <GlobalStyle />
       {children}
     </ThemeProvider>

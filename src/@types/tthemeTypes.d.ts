@@ -1,0 +1,1 @@
+type ThemeTypes = 'dark' | 'light'

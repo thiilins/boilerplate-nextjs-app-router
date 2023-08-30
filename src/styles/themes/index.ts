@@ -1,2 +1,4 @@
-export { light } from '@styles/themes/light'
-export { dark } from '@styles/themes/dark'
+import { light } from './light'
+import { dark } from './dark'
+
+export default { light, dark }
