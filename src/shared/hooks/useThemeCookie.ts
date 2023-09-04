@@ -1,4 +1,5 @@
 'use client'
+// For more details check the JS-Cookie Docs in https://github.com/js-cookie/js-cookie#readme
 import { useState, useEffect } from 'react'
 import Cookies from 'js-cookie'
 
@@ -10,12 +11,11 @@ export default function useThemeCookie(
   )
 
   useEffect(() => {
-    Cookies.set('theme', theme, { expires: 365 })
+    Cookies.set('theme', theme, {
+      expires: Number(process.env.NEXT_PUBLIC_COOKIES_EXPIRES) ?? 365,
+      domain: process.env.NEXT_PUBLIC_COOKIE_DOMAIN
+    })
   }, [theme])
-  useEffect(() => {
-    const cookie = Cookies.get('theme')
-    console.log('cookie', cookie)
-  }, [])
 
   return [theme, setTheme]
 }
