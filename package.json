@@ -47,7 +47,7 @@
     "@storybook/nextjs": "^7.4.0",
     "@storybook/react": "^7.4.0",
     "@storybook/testing-library": "^0.2.0",
-    "@swc/plugin-styled-components": "^1.5.74",
+    "@swc/plugin-styled-components": "^1.5.118",
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@types/cookie": "^0.5.1",
