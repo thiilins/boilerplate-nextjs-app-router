@@ -1,4 +1,4 @@
-name: Auto approve Dependabot PRs
+name: Auto approve
 
 on: pull_request_target
 
@@ -10,3 +10,5 @@ jobs:
     if: github.actor == 'dependabot[bot]'
     steps:
       - uses: hmarr/auto-approve-action@v4
+        with:
+          review-message: "Auto approved automated PR"
