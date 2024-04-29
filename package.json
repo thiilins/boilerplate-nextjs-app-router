@@ -25,7 +25,7 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
     "@types/node": "20.12.7",
-    "@types/react": "18.2.74",
+    "@types/react": "18.3.1",
     "@types/react-dom": "18.2.23",
     "cookie": "^0.6.0",
     "cookie": "^0.6.0",
@@ -33,7 +33,7 @@
     "eslint-config-next": "14.1.4",
     "negotiator": "^0.6.3",
     "next": "14.1.4",
-    "react": "18.2.0",
+    "react": "18.3.1",
     "react-dom": "18.2.0",
     "styled-components": "^6.1.8",
     "typescript": "5.4.5",
