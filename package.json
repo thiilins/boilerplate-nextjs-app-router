@@ -30,7 +30,7 @@
     "cookie": "^0.6.0",
     "cookie": "^0.6.0",
     "eslint": "9.0.0",
-    "eslint-config-next": "14.1.4",
+    "eslint-config-next": "14.2.3",
     "negotiator": "^0.6.3",
     "next": "14.1.4",
     "react": "18.2.0",
