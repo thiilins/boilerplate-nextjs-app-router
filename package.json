@@ -54,7 +54,7 @@
     "@types/negotiator": "^0.6.1",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^7.6.0",
-    "@typescript-eslint/parser": "^7.5.0",
+    "@typescript-eslint/parser": "^8.6.0",
     "babel-plugin-styled-components": "^2.1.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.0",
