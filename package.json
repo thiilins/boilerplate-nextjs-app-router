@@ -29,7 +29,7 @@
     "@types/node": "22.9.0",
     "@types/react": "18.3.11",
     "@types/react-dom": "18.3.0",
-    "cookie": "^0.6.0",
+    "cookie": "^1.0.2",
     "eslint": "9.17.0",
     "eslint-config-next": "15.0.3",
     "js-cookie": "^3.0.5",
