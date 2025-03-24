@@ -30,6 +30,10 @@ jobs:
             echo "IS_DEPENDABOT=false" >> $GITHUB_ENV
           fi
 
+      - name: Checkout repository
+        if: env.IS_DEPENDABOT == 'true'
+        uses: actions/checkout@v3
+
       - name: Approve PR
         if: env.IS_DEPENDABOT == 'true'
         run: |
