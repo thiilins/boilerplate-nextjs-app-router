@@ -30,12 +30,15 @@ jobs:
             echo "IS_DEPENDABOT=false" >> $GITHUB_ENV
           fi
 
+      - name: Checkout repository
+        if: env.IS_DEPENDABOT == 'true'
+        uses: actions/checkout@v3
+
       - name: Approve PR
         if: env.IS_DEPENDABOT == 'true'
         run: |
+          gh auth login --with-token < <(echo ${{ secrets.PAT_GITHUB }})
           gh pr review $PR_NUMBER --approve
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Enable Auto-Merge with Squash
         if: env.IS_DEPENDABOT == 'true'
