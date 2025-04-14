@@ -28,7 +28,7 @@
     "@formatjs/intl-localematcher": "^0.6.0",
     "@types/node": "22.14.1",
     "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
+    "@types/react-dom": "19.1.2",
     "cookie": "^1.0.2",
     "eslint": "9.24.0",
     "eslint-config-next": "15.3.0",
