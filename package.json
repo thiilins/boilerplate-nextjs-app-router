@@ -47,7 +47,7 @@
     "@storybook/addon-links": "^9.0.4",
     "@storybook/addon-onboarding": "^9.0.4",
     "@storybook/blocks": "^8.0.0",
-    "@storybook/nextjs": "^8.0.4",
+    "@storybook/nextjs": "^9.0.4",
     "@storybook/react": "^9.0.4",
     "@storybook/testing-library": "^0.2.0",
     "@swc/plugin-styled-components": "^7.1.0",
