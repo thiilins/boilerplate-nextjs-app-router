@@ -50,7 +50,7 @@
     "@storybook/nextjs": "^9.0.4",
     "@storybook/react": "^9.0.4",
     "@storybook/testing-library": "^0.2.0",
-    "@swc/plugin-styled-components": "^8.0.0",
+    "@swc/plugin-styled-components": "^9.0.2",
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^16.0.1",
     "@types/cookie": "^1.0.0",
